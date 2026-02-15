@@ -1,0 +1,71 @@
+/* frontend/src/App.css (Global Styles) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+/* --- CRITICAL FULL-WIDTH RESET --- */
+/* Target everything to ensure padding/margin is handled correctly */
+*, *::before, *::after {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Update your color palette */
+  --color-primary-bg: #FCFAF7; /* Creamy White */
+  --color-dark-text: #2C2C2C; /* Dark Charcoal */
+  --color-medium-text: #6B7280; /* Gray for subtle text */
+  --color-accent-terracotta: #A65D4F; /* Terracotta Brown */
+  --color-accent-green: #597A76; /* Soft Teal/Green */
+  --color-card-bg: #FFFFFF;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* UI Variables */
+  --border-radius-base: 12px;
+}
+/* --- Base Typography and Body Layout --- */
+html, body, #root {
+  /* Enforce 100% width/height and remove default browser margins */
+  width: 100vw; 
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll from accidental margin bugs */
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--color-dark-text);
+  background-color: var(--color-primary-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-dark-text);
+}
+/* Base styles for rounded cards and buttons */
+.rounded-card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 4px 12px var(--color-shadow);
+    padding: 20px;
+}
+
+.content-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.btn-primary {
+    background-color: var(--color-accent-terracotta);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #8c4c3f;
+    transform: translateY(-2px);
+}

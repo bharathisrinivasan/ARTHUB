@@ -1,0 +1,71 @@
+/* frontend/src/components/Navbar.css */
+/* frontend/src/components/Navbar.css */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Use fixed padding on the sides, but ensure width is 100% */
+  padding: 1rem 1rem; 
+  background-color: var(--color-card-bg);
+  border-bottom: 1px solid #ddd;
+  
+  /* FIX: Ensure 100% width and remove any max-width constraints */
+  width: 100%; 
+  box-sizing: border-box; /* IMPORTANT: Ensures padding doesn't push the width over 100% */
+  position: sticky; /* Sticky navbar stays at the top when scrolling */
+  top: 0;
+  z-index: 100; /* Ensure it stays above other content */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-dark-text);
+}
+
+.navbar-logo {
+  height: 60px; /* fixed suggested height */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  filter: var(--logo-filter, none); /* allows theme inversion if needed */
+}
+
+.navbar-links {
+  display: flex;
+  padding-right: 2rem; 
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* If you have a root .dark class for dark theme, you can set:
+.dark .navbar-logo { filter: var(--logo-filter-dark, none); }
+or use CSS variables to invert the logo for dark backgrounds:
+:root[data-theme="dark"] .navbar-logo { filter: invert(1) brightness(1.1); }
+*/
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--color-dark-text);
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: var(--color-accent-vibrant);
+}
+
+.navbar-button {
+  background-color: var(--color-accent-vibrant);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar-button:hover {
+  background-color: #C0433E; /* A slightly darker shade of the vibrant color */
+}

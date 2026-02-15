@@ -1,0 +1,97 @@
+/* frontend/src/components/BlogForm.css */
+/* Inherits global styles from App.css */
+
+.blog-form-container {
+    padding: 30px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blog-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color-accent-terracotta);
+}
+
+.form-section-card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 2px 10px var(--color-shadow);
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.form-section-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-dark-text);
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.blog-form-container input[type="text"],
+.blog-form-container textarea,
+.blog-form-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.blog-form-container textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Rich Text Editor Styling (Quill) */
+.quill {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.ql-toolbar {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #f7f7f7;
+}
+
+.ql-container {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.input-group-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group-row input,
+.input-group-row select {
+    flex: 1;
+}
+
+.visibility-options {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.publish-btn {
+    background-color: var(--color-accent-green);
+}
+
+.preview-btn {
+    background-color: var(--color-medium-text);
+}

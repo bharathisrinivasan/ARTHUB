@@ -1,0 +1,222 @@
+/* frontend/src/components/ArtisanPublicProfile.css */
+.artisan-profile-page {
+    padding: 0 5% 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header/Banner Section */
+.profile-header-card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 6px 15px var(--color-shadow);
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+}
+
+.profile-banner-image {
+    height: 150px;
+    background-color: var(--color-accent-terracotta); /* Placeholder color */
+    background-image: url('https://placehold.co/1200x150/A65D4F/ffffff?text=Artisan+Banner');
+    background-size: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-info-content {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: -80px; /* Pulls content up */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 5px solid var(--color-card-bg); /* White border */
+    box-shadow: 0 0 0 2px var(--color-accent-terracotta);
+    flex-shrink: 0;
+}
+
+.profile-details {
+    margin-top: 40px;
+}
+
+.profile-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.craft-type {
+    color: var(--color-medium-text);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.message-btn {
+    background-color: var(--color-accent-terracotta);
+    color: white;
+}
+
+.view-products-btn, .follow-btn {
+    background-color: var(--color-card-bg);
+    color: var(--color-dark-text);
+    border: 1px solid var(--color-dark-text);
+}
+
+/* Portfolio Gallery Section */
+.gallery-section {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.gallery-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    color: var(--color-medium-text);
+    margin-bottom: 20px;
+}
+
+.portfolio-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: var(--color-card-bg);
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: var(--color-accent-terracotta);
+    color: white;
+    border-color: var(--color-accent-terracotta);
+}
+
+.portfolio-grid-public {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card-public {
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--color-shadow);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-card-public:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--color-shadow);
+}
+
+.project-thumbnail-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card-public:hover .project-thumbnail {
+    transform: scale(1.05); /* Zoom on hover */
+}
+
+.project-details {
+    padding: 15px;
+}
+
+.project-details h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.project-tags {
+    color: var(--color-accent-green);
+    font-size: 0.9rem;
+}
+
+/* Testimonials Section */
+.contact-testimonials-section {
+    margin-top: 50px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 5px var(--color-shadow);
+}
+
+.quote {
+    font-style: italic;
+    color: var(--color-dark-text);
+    margin-bottom: 10px;
+}
+
+.author {
+    font-weight: bold;
+    color: var(--color-accent-terracotta);
+    text-align: right;
+    display: block;
+}
+
+.collaboration-box {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    border: 1px dashed var(--color-accent-terracotta);
+}
+
+.custom-order-btn {
+    /* Use btn-primary style defined in global CSS */
+    margin-top: 10px;
+}

@@ -1,0 +1,80 @@
+/* Orders Page Styles: frontend/src/components/OrdersPage.css */
+.orders-container {
+    padding: 40px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.orders-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.orders-summary {
+    text-align: center;
+    color: var(--color-medium-text);
+    margin-bottom: 30px;
+}
+
+.order-card {
+    background-color: var(--color-card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--color-shadow);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+    font-weight: 600;
+}
+
+.order-id {
+    color: var(--color-dark-text);
+}
+
+.order-status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Status colors use your defined accents */
+.status-pending { background-color: #ffc10740; color: #ffc107; } /* Soft Yellow */
+.status-shipped { background-color: #007bff40; color: #007bff; } /* Soft Blue */
+.status-delivered { background-color: #28a74540; color: #28a745; } /* Soft Green */
+
+.order-body {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-info-details h3 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.order-price-details {
+    margin-left: auto;
+    text-align: right;
+}
+
+.total-price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: block;
+    color: var(--color-terracotta);
+}
